@@ -1,0 +1,24 @@
+package com.msedcl.service;
+
+import java.util.List;
+
+import com.msedcl.main.entity.Employee;
+
+public interface EmployeeService {
+	Employee addNewEmployee(Employee employee);
+	
+	Employee updateEmployee(Employee employee);
+	
+	Employee getEmployeeByEmployeeId(int employeeId);
+	
+	boolean deleteEmployeeByEmployeeId(int employeeId);
+	
+	List<Employee> getAllEmployees();
+	
+	public List<Employee> getEmployeeByName(String name);
+	
+	public long getCountOfEmployees();
+	
+	public List<Employee> findHighestSalaryEmployee();
+	
+}
